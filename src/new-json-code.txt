@@ -1,0 +1,193 @@
+import {
+  GET_SERVICE_CARDS,
+} from '../constants'
+const initialState = {
+  data:[
+        {
+          "catalog": {"companyPlatform": "Enterprise Platforms", "createdAt": 1543458413117, "definition": "Can I make a payment ? What type ? How much ? ", 
+          "examples" : ["Customer can make only x number of immediate payments in US market per day.", 
+          "Customer cannot make an immediate payment if there is a scheduled payment."
+        ], "explanation": "There are market based rules, for example - the number of payments a customer can make on a given day, and risk - based rules regarding how much a customer can pay based on payment instrument used.", 
+        "feature": [{
+            "name": "Create FI Account Enrollment",
+              "US": {
+                "API": "someAPIurl.com",
+                "innersource": "https: //someurl.com",
+                  "PMO": "someotherurl.com"
+              },
+              "CA": {
+                "API": "someAPIurl.com",
+                "innersource": "https: //someurl.com",
+                  "PMO": "someotherurl.com"
+              }
+            },
+            {"name": "List Enrollment for an Account",
+              "US": {
+                "API": "someAPIurl.com",
+                "innersource": "https: //someurl.com",
+                  "PMO": "someotherurl.com"
+              },
+              "CA": {
+                "API": "someAPIurl.com",
+                "innersource": "https: //someurl.com",
+                  "PMO": "someotherurl.com"
+              }
+            }
+          ], "id": "2 b3285a2 - 087 d - 4390 - be87 - 1e7883 bac969", "name": "Payment Eligibility", "note": "Some Note Here.", "platformOwner": "John Doe", "productLine": {
+            "AIP": true,
+            "threePIP": false
+          }
+        }
+        },
+        {
+          "catalog": {"companyPlatform": "Enterprise Platforms", "createdAt": 1543458413117, "definition": "Can I make a payment ? What type ? How much ? ", 
+          "examples" : ["Customer can make only x number of immediate payments in US market per day.", 
+          "Customer cannot make an immediate payment if there is a scheduled payment."
+        ], "explanation": "There are market based rules, for example - the number of payments a customer can make on a given day, and risk - based rules regarding how much a customer can pay based on payment instrument used.", "feature": [{
+            "name": "Create FI Account Enrollment",
+              "US": {
+                "API": "someAPIurl.com",
+                "innersource": "https: //someurl.com",
+                  "PMO": "someotherurl.com"
+              },
+              "CA": {
+                "API": "someAPIurl.com",
+                "innersource": "https: //someurl.com",
+                  "PMO": "someotherurl.com"
+              }
+            },
+            {"name": "List Enrollment for an Account",
+              "US": {
+                "API": "someAPIurl.com",
+                "innersource": "https: //someurl.com",
+                  "PMO": "someotherurl.com"
+              },
+              "CA": {
+                "API": "someAPIurl.com",
+                "innersource": "https: //someurl.com",
+                  "PMO": "someotherurl.com"
+              }
+            }
+          ], "id": "2 b3285a2 - 087 d - 4390 - be87 - 1e7883 bac969", "name": "Payment Eligibility", "note": "Some Note Here.", "platformOwner": "John Doe", "productLine": {
+            "AIP": true,
+            "threePIP": false
+          }
+        }
+        },
+        {
+          "catalog": {"companyPlatform": "Enterprise Platforms", "createdAt": 1543458413117, "definition": "Can I make a payment ? What type ? How much ? ", 
+          "examples" : ["Customer can make only x number of immediate payments in US market per day.", 
+          "Customer cannot make an immediate payment if there is a scheduled payment."
+        ], "explanation": "There are market based rules, for example - the number of payments a customer can make on a given day, and risk - based rules regarding how much a customer can pay based on payment instrument used.", "feature": [{
+            "name": "Create FI Account Enrollment",
+              "US": {
+                "API": "someAPIurl.com",
+                "innersource": "https: //someurl.com",
+                  "PMO": "someotherurl.com"
+              },
+              "CA": {
+                "API": "someAPIurl.com",
+                "innersource": "https: //someurl.com",
+                  "PMO": "someotherurl.com"
+              }
+            },
+            {"name": "List Enrollment for an Account",
+              "US": {
+                "API": "someAPIurl.com",
+                "innersource": "https: //someurl.com",
+                  "PMO": "someotherurl.com"
+              },
+              "CA": {
+                "API": "someAPIurl.com",
+                "innersource": "https: //someurl.com",
+                  "PMO": "someotherurl.com"
+              }
+            }
+          ], "id": "2 b3285a2 - 087 d - 4390 - be87 - 1e7883 bac969", "name": "Payment Eligibility", "note": "Some Note Here.", "platformOwner": "John Doe", "productLine": {
+            "AIP": true,
+            "threePIP": false
+          }
+        }
+        },
+        {
+          "catalog": {"companyPlatform": "Enterprise Platforms", "createdAt": 1543458413117, "definition": "Can I make a payment ? What type ? How much ? ", 
+          "examples" : ["Customer can make only x number of immediate payments in US market per day.", 
+          "Customer cannot make an immediate payment if there is a scheduled payment."
+        ], "explanation": "There are market based rules, for example - the number of payments a customer can make on a given day, and risk - based rules regarding how much a customer can pay based on payment instrument used.", "feature": [{
+            "name": "Create FI Account Enrollment",
+              "US": {
+                "API": "someAPIurl.com",
+                "innersource": "https: //someurl.com",
+                  "PMO": "someotherurl.com"
+              },
+              "CA": {
+                "API": "someAPIurl.com",
+                "innersource": "https: //someurl.com",
+                  "PMO": "someotherurl.com"
+              }
+            },
+            {"name": "List Enrollment for an Account",
+              "US": {
+                "API": "someAPIurl.com",
+                "innersource": "https: //someurl.com",
+                  "PMO": "someotherurl.com"
+              },
+              "CA": {
+                "API": "someAPIurl.com",
+                "innersource": "https: //someurl.com",
+                  "PMO": "someotherurl.com"
+              }
+            }
+          ], "id": "2 b3285a2 - 087 d - 4390 - be87 - 1e7883 bac969", "name": "Payment Eligibility", "note": "Some Note Here.", "platformOwner": "John Doe", "productLine": {
+            "AIP": true,
+            "threePIP": false
+          }
+        }
+        },
+        {
+          "catalog": {"companyPlatform": "Enterprise Platforms", "createdAt": 1543458413117, "definition": "Can I make a payment ? What type ? How much ? ", 
+          "examples" : ["Customer can make only x number of immediate payments in US market per day.", 
+          "Customer cannot make an immediate payment if there is a scheduled payment."
+        ], "explanation": "There are market based rules, for example - the number of payments a customer can make on a given day, and risk - based rules regarding how much a customer can pay based on payment instrument used.", "feature": [{
+            "name": "Create FI Account Enrollment",
+              "US": {
+                "API": "someAPIurl.com",
+                "innersource": "https: //someurl.com",
+                  "PMO": "someotherurl.com"
+              },
+              "CA": {
+                "API": "someAPIurl.com",
+                "innersource": "https: //someurl.com",
+                  "PMO": "someotherurl.com"
+              }
+            },
+            {"name": "List Enrollment for an Account",
+              "US": {
+                "API": "someAPIurl.com",
+                "innersource": "https: //someurl.com",
+                  "PMO": "someotherurl.com"
+              },
+              "CA": {
+                "API": "someAPIurl.com",
+                "innersource": "https: //someurl.com",
+                  "PMO": "someotherurl.com"
+              }
+            }
+          ], "id": "2 b3285a2 - 087 d - 4390 - be87 - 1e7883 bac969", "name": "Payment Eligibility", "note": "Some Note Here.", "platformOwner": "John Doe", "productLine": {
+            "AIP": true,
+            "threePIP": false
+          }
+        }
+        }
+        ],
+      filters:''
+    }
+
+export default function serviceCards(state = initialState, action) {
+  switch (action.type) {
+    case GET_SERVICE_CARDS:
+      return state.data  
+    default:
+      return state
+  }
+}
