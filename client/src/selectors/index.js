@@ -4,7 +4,6 @@ import ServiceCardSearch from '../containers/ServiceCardSearch';
 const getCards = state => state.serviceCards;
 const getCardFilter = state => state.serviceCardFilter;
 
-
 export const getServiceCards =  createSelector(
   [getCardFilter, getCards],
   (filters,cards) =>{
@@ -53,8 +52,15 @@ export const getServiceCards =  createSelector(
         for (var j = 0; j < filters.selectedTR.length; j++) {
           opData.forEach(entry => {
             console.log(entry);
-            if(entry.productLine[filters.selectedTR[j]]){
-              paymentData.push(entry);
+            if(filters.selectedTR.length!=2){
+              if(entry.productLine[filters.selectedTR[j]]){
+                paymentData.push(entry);
+              }
+            }
+            else{
+              if(entry.productLine[filters.selectedTR[0]] && (entry.productLine[filters.selectedTR[1]])){
+                paymentData.push(entry);
+              }
             }
           });
           
